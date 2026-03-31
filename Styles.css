@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ranga&family=Biryani:wght@400;700&display=swap');
+
+:root {
+  --font-primary: 'Biryani', sans-serif;
+  --font-heading: 'Megrim', cursive;
+  --font-subhead: 'Ranga', cursive;
+}
+
+h1, .nav li { 
+  font-family: var(--font-heading); 
+}
+h2, h3 { 
+  font-family: var(--font-subhead);
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+h4,h5,h6 { 
+  font-family: var(--font-primary);
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+
+}
+
+p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +51,7 @@ body{
 }
 
 .Pannel{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.678);
     width: min(90%, 1200px);
     min-height: 65vh;
     margin: auto;
@@ -87,14 +120,14 @@ body{
   width: 100%;
   justify-content: center;
   align-items: center;
-  color: #fff; 
+  color: #111; 
   text-decoration: none; 
   font-size: .95rem; 
   transition: color .2s ease; 
 }
 
 .footer-nav a:hover { 
-  color: var(--nav-hover-link); 
+  color: #638403; 
 }
 .footer-nav .social-item {
   width: 100%;
@@ -119,7 +152,7 @@ body{
   gap: .6rem; 
   padding: .45rem .7rem; 
   border-radius: .5rem; 
-  background: #111; 
+  background: #638403; 
   text-decoration: none; 
   transition: background .3s ease, transform .2s ease; 
 }
@@ -136,7 +169,7 @@ body{
 }
 
 .social-item:hover svg {
-   fill: #272727; 
+   fill: #638403; 
   }
 
 .social-label { 
@@ -146,5 +179,53 @@ body{
 }
 
 .social-item:hover .social-label { 
-  color: #272727; 
+  color: #ffffff; 
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem 0;
+    background-position: top center;
+  }
+
+  .Pannel {
+    width: min(95%, 650px);
+    min-height: auto;
+    max-height: calc(100vh - 2rem);
+    padding: 1rem;
+  }
+
+  .bigcontainer {
+    padding: 1rem 0;
+  }
+
+  .bigcontainer .container {
+    gap: 1rem;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    min-width: auto;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .footer-nav ul {
+    max-width: 100%;
+    gap: 0.75rem;
+  }
+
+  .footer-nav .social-item {
+    padding: 0.9rem 0.8rem;
+    min-height: 3.5rem;
+  }
+
+  .social-item svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .social-label {
+    font-size: 0.9rem;
+  }
 }
