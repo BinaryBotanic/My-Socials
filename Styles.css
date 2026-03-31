@@ -186,10 +186,11 @@ body{
   body {
     padding: 1rem 0;
     background-position: top center;
+    background-image: url(Assets/Background-mobil.gif);
   }
 
   .Pannel {
-    width: min(95%, 650px);
+    width: min(85%, 650px);
     min-height: auto;
     max-height: calc(100vh - 2rem);
     padding: 1rem;
