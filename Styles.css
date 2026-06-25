@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ranga&family=Biryani:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dekko');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ranga&family=Dekko:wght@400;700&display=swap');
 
 :root {
   --font-primary: 'Dekko', cursive;
@@ -10,22 +9,14 @@
 h1, .nav li { 
   font-family: var(--font-heading); 
 }
-h2, h3 { 
-  font-family: var(--font-subhead);
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-}
-h4,h5,h6 { 
-  font-family: var(--font-primary);
-  margin-top: 1rem;
-  margin-bottom: 0rem;
 
-}
 
 p {
+  font-family: var(--font-primary);
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #ffffff;
+    font-size: medium;
 }
 
 h1 {
@@ -93,6 +84,7 @@ body{
   align-items: flex-start;
   margin: 0;
   padding: 0;
+  font-size: large;
 }
 
 .footer-nav {
@@ -123,7 +115,7 @@ body{
   align-items: center;
   color: #111; 
   text-decoration: none; 
-  font-size: .95rem; 
+  font-size: 0.95rem; 
   transition: color .2s ease; 
 }
 
